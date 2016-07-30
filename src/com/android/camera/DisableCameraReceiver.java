@@ -44,7 +44,8 @@ public class DisableCameraReceiver extends BroadcastReceiver {
         if (!needCameraActivity) {
             Log.i(TAG, "disable all camera activities");
             for (int i = 0; i < ACTIVITIES.length; i++) {
-                disableComponent(context, ACTIVITIES[i]);
+                //disableComponent(context, ACTIVITIES[i]);
+                disableComponent(context, "com.android.camera.DisableCameraReceiver");
             }
         }
 
